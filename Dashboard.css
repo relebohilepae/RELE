@@ -1,0 +1,111 @@
+.dashboard {
+    background-color: #f4f7f9; /* Light background for the dashboard */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Card shadow for depth */
+    max-width: 800px; /* Limit the width of the dashboard */
+    margin: 40px auto; /* Center the dashboard on the page */
+    font-family: 'Helvetica', sans-serif; /* Clean font for readability */
+  }
+  
+  .dashboard h2 {
+    text-align: center; 
+    color: crimson; 
+    font-size: 24px; /* Larger heading font */
+    margin-bottom: 30px; /* Spacing below heading */
+    border-bottom: 2px solid #007bff; 
+    padding-bottom: 10px;
+  }
+  
+  .table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* No gaps between table cells */
+    margin-top: 20px; /* Space between heading and table */
+  }
+  
+  .table thead {
+    background-color: #007bff; 
+    color: white; 
+  }
+  
+  .table th, .table td {
+    padding: 12px 20px; /* Padding inside cells */
+    border: 1px solid #ddd; 
+    text-align: center; 
+    font-size: 16px; 
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e6f7ff; /* Highlight row on hover */
+  }
+  
+  .table th {
+    font-weight: bold; /* Bold header text */
+  }
+  
+  .table td {
+    color: #555; /* Slightly darker text for table body */
+  }
+  
+  .no-products {
+    text-align: center; /* Center the "No products" text */
+    color: #999; 
+    font-size: 18px; 
+    margin-top: 20px; 
+  }
+  .rotating-image-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Adjust to the width of your images */
+    height: 200px; /* Adjust to the height of your images */
+    position: relative;
+  }
+  .rotating-image-container {
+    display: flex;
+    overflow: hidden;
+    width: 300px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    position: relative;
+  }
+  
+  .rotating-image {
+    min-width: 100%;
+    animation: slide 9s infinite; /* Adjust duration as needed */
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .rotating-image:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .rotating-image:nth-child(2) {
+    animation-delay: 3s; /* Adjust to match the duration of one slide */
+  }
+  
+  .rotating-image:nth-child(3) {
+    animation-delay: 6s; /* Adjust to match the duration of one slide */
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
